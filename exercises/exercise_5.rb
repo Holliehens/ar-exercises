@@ -8,3 +8,14 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
+# Note
+puts @total_revenue = Store.sum(:annual_revenue)
+
+
+# ActiveRecord requires .all.size syntax when calling .size
+# option to use .count()
+puts "#{@total_revenue / Store.all.size}"
+
+
+# .where must be placed before .sum bc of the type conditional statement
+puts @total_revenue = Store.where("annual_revenue > 1000000").sum(:annual_revenue)
