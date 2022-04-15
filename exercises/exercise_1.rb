@@ -6,8 +6,7 @@ puts "----------"
 # Your code goes below here ...
 #   # C R u d
 
-class Store < ActiveRecord::Base
-end
+
 
 # This will create a 'Store' model, mapped to a 'stores' table at the database.
 
@@ -22,8 +21,5 @@ puts Store.count()
 
 
 
-class Employee < ActiveRecord::Base
-end
 
 
-# This will create a 'Employee' model, mapped to a 'employees' table at the database.
