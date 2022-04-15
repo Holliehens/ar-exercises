@@ -12,7 +12,7 @@ puts "----------"
 
 @store1.employees.create(first_name: "Khurram", last_name: "Virani", hourly_rate: 60)
 
-@store5.employees.create(first_name: "Hollie", last_name: "Happie", hourly_rate: 700)
+@store5.employees.create(first_name: "Hollie", last_name: "Happie", hourly_rate: 200)
 
 @store4.employees.create(first_name: "Dollie", last_name: "Pardon", hourly_rate: 88)
 

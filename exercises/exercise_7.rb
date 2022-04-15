@@ -10,3 +10,15 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+class Employee < ActiveRecord::Base
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  validates :hourly_rate, length: { in: 40..200 }
+  validates :store, presence: true
+end
+
+class Store < ActiveRecord::Base
+  validates_length_of :name, minimum: 3
+  validates_numericality_of :annual_revenue, greater_than_or_equal_to: 0
+end
