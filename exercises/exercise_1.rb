@@ -4,6 +4,7 @@ puts "Exercise 1"
 puts "----------"
 
 # Your code goes below here ...
+#   # C R u d
 
 class Store < ActiveRecord::Base
 end
